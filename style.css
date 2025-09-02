@@ -1,0 +1,138 @@
+/* === Reset & Base === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: linear-gradient(to right, #fdfdfd, #f3f3f3);
+    color: #2d2d2d;
+    line-height: 1.6;
+    padding: 0 15px;
+}
+
+/* === Header === */
+header {
+    background: linear-gradient(to right, #1f4037, #99f2c8);
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px 30px;
+    border-bottom: 4px solid #2c786c;
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.15em;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* === Sections === */
+section {
+    background-color: #ffffff;
+    margin: 40px auto;
+    padding: 35px;
+    max-width: 960px;
+    border-radius: 10px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.04);
+    transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* === Section Headings === */
+h2 {
+    font-size: 1.7em;
+    margin-bottom: 20px;
+    color: #183b4f;
+    padding-left: 12px;
+    border-left: 5px solid #2c786c;
+}
+
+/* === About Image === */
+#about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* === Paragraphs === */
+section p {
+    font-size: 1.05em;
+    margin-bottom: 18px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* === Lists === */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    padding-left: 22px;
+    margin-bottom: 12px;
+    position: relative;
+    font-size: 1.05em;
+    color: #333;
+}
+
+li::before {
+    content: "➤";
+    position: absolute;
+    left: 0;
+    color: #2c786c;
+    font-size: 0.9em;
+}
+
+/* === Contact Links === */
+#contact a {
+    color: #2c786c;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+
+#contact a:hover {
+    color: #1a4f3f;
+    text-decoration: underline;
+}
+
+/* === Footer === */
+footer {
+    background-color: #1a1a1a;
+    color: #bbbbbb;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.95em;
+    margin-top: 50px;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    #about img {
+        width: 120px;
+        height: 120px;
+    }
+}
